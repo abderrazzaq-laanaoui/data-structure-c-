@@ -39,8 +39,8 @@ int main(int argc, char const *argv[])
     std::cout << "Size: " << pointPQ.size() << " | TOP: " << pointPQ.top() << std::endl;
     pointPQ.pop();
     
-    if(!intPQ.isEmpty())
+    if(!pointPQ.isEmpty())
     std::cout << "integar PQ is not empty" << std::endl;
-    
+
     return 0;
 }
