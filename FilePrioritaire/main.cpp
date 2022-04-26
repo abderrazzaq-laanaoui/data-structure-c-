@@ -5,7 +5,7 @@
 #include "pointComp.hpp"
 int main(int argc, char const *argv[])
 {
-#pragma region 
+    // INTEGAR PRIORITY QUEUE
    PriorityQueue<int,isLess> intPQ;
    intPQ.push(121);
    intPQ.push(12);
@@ -24,9 +24,8 @@ int main(int argc, char const *argv[])
 
    if(intPQ.isEmpty())
     std::cout << "is empty" << std::endl;
-#pragma endregion 
-
-#pragma region 
+   
+   // POINT PRIORITY QUEUE
     PriorityQueue<Point,IsOnLeft> pointPQ;
     Point p1, p2(1,12), p3(23,4), p4(6,1);
 
@@ -38,7 +37,6 @@ int main(int argc, char const *argv[])
     pointPQ.pop();
      std::cout << "Size: " << pointPQ.size() << " | TOP: " << pointPQ.top() << std::endl;
     pointPQ.pop();
-#pragma endregion
     
     return 0;
 }
