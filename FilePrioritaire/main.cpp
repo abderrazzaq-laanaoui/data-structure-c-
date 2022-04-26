@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
    intPQ.pop();
 
    if(intPQ.isEmpty())
-    std::cout << "is empty" << std::endl;
+    std::cout << "integar PQ is empty" << std::endl;
    
    // POINT PRIORITY QUEUE
     PriorityQueue<Point,IsOnLeft> pointPQ;
@@ -33,10 +33,14 @@ int main(int argc, char const *argv[])
     pointPQ.push(p2);
     pointPQ.push(p3);
     pointPQ.push(p4);
-     std::cout << "Size: " << pointPQ.size() << " | TOP: " << pointPQ.top() << std::endl;
+
+    std::cout << "Size: " << pointPQ.size() << " | TOP: " << pointPQ.top() << std::endl;
     pointPQ.pop();
-     std::cout << "Size: " << pointPQ.size() << " | TOP: " << pointPQ.top() << std::endl;
+    std::cout << "Size: " << pointPQ.size() << " | TOP: " << pointPQ.top() << std::endl;
     pointPQ.pop();
+    
+    if(!intPQ.isEmpty())
+    std::cout << "integar PQ is not empty" << std::endl;
     
     return 0;
 }
